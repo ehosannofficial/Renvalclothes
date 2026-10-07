@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RENVAL CLOTHES</title>
+  <meta name="description" content="RENVAL CLOTHES — Premium Fashion">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #0b0b0b;
+      color: #f5f3ef;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 900px;
+      min-height: 100vh;
+      margin: auto;
+      padding: 55px 40px 45px;
+
+      background:
+        radial-gradient(
+          circle at 50% 20%,
+          rgba(255,255,255,0.035),
+          transparent 35%
+        ),
+        #0b0b0b;
+    }
+
+    /* TOP TITLE */
+
+    .top-title {
+      text-align: center;
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      line-height: 1.2;
+    }
+
+    .dash {
+      width: 65px;
+      height: 2px;
+      background: #d5d3ce;
+      margin: 32px auto 125px;
+    }
+
+    /* PREMIUM FASHION */
+
+    .eyebrow {
+      text-align: center;
+      color: #b8b6b1;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.30em;
+      margin-bottom: 65px;
+    }
+
+    /* BRAND */
+
+    .brand {
+      text-align: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 700;
+      font-size: clamp(72px, 13vw, 150px);
+      line-height: 0.86;
+      letter-spacing: -0.055em;
+      margin-bottom: 78px;
+    }
+
+    .brand span {
+      display: block;
+    }
+
+    /* SOCIAL BUTTONS */
+
+    .links {
+      display: grid;
+      gap: 30px;
+    }
+
+    .link {
+      min-height: 125px;
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+
+      border: 2px solid #363636;
+      border-radius: 34px;
+
+      color: #f3f1ed;
+      background: rgba(255,255,255,0.005);
+
+      text-decoration: none;
+
+      font-size: clamp(21px, 3vw, 31px);
+      font-weight: 700;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .link:hover {
+      transform: translateY(-3px);
+      border-color: #777;
+      background: rgba(255,255,255,0.035);
+    }
+
+    .link:active {
+      transform: scale(0.985);
+    }
+
+    /* ICONS */
+
+    .icon {
+      width: 44px;
+      height: 44px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      flex: 0 0 44px;
+    }
+
+    .icon svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+      fill: currentColor;
+    }
+
+    /* FOOTER */
+
+    footer {
+      margin-top: 150px;
+      padding-top: 50px;
+
+      border-top: 2px solid #333;
+
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .footer-brand {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      line-height: 1.25;
+    }
+
+    .footer-sub {
+      color: #999;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+
+    .socials {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social {
+      width: 65px;
+      height: 65px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border: 2px solid #363636;
+      border-radius: 50%;
+
+      color: #eee;
+      text-decoration: none;
+
+      transition: 0.2s ease;
+    }
+
+    .social:hover {
+      border-color: #777;
+      transform: translateY(-2px);
+    }
+
+    .social svg {
+      width: 29px;
+      height: 29px;
+      fill: currentColor;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 600px) {
+
+      .page {
+        padding: 30px 18px 35px;
+      }
+
+      .top-title {
+        font-size: 27px;
+      }
+
+      .dash {
+        margin-top: 25px;
+        margin-bottom: 90px;
+      }
+
+      .eyebrow {
+        font-size: 13px;
+        letter-spacing: 0.25em;
+        margin-bottom: 50px;
+      }
+
+      .brand {
+        font-size: clamp(60px, 18vw, 100px);
+        margin-bottom: 60px;
+      }
+
+      .links {
+        gap: 20px;
+      }
+
+      .link {
+        min-height: 92px;
+        border-radius: 27px;
+        gap: 18px;
+        font-size: 20px;
+      }
+
+      .icon {
+        width: 35px;
+        height: 35px;
+        flex-basis: 35px;
+      }
+
+      footer {
+        margin-top: 90px;
+        padding-top: 35px;
+        flex-direction: column;
+      }
+
+      .socials {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .social {
+        width: 57px;
+        height: 57px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <!-- HEADER -->
+
+    <h1 class="top-title">
+      Wear What's Next.
+    </h1>
+
+    <div class="dash"></div>
+
+    <div class="eyebrow">
+      PREMIUM FASHION
+    </div>
+
+    <!-- BRAND -->
+
+    <h2 class="brand">
+      <span>RENVAL</span>
+      <span>CLOTHES</span>
+    </h2>
+
+
+    <!-- SOCIAL LINKS -->
+
+    <section class="links">
+
+
+      <!-- WHATSAPP -->
+
+      <a
+        class="link"
+        href="https://wa.me/8801998191865"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <span class="icon">
+
+          <svg viewBox="0 0 24 24">
+            <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7c1.6.9 3.5 1.3 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.3-6.1-3.5-8.3ZM12.1 21.5c-1.7 0-3.4-.5-4.9-1.3l-.3-.2-3.8 1 1-3.7-.2-.3c-1-1.6-1.5-3.4-1.5-5.2 0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9 1.9 1.9 2.9 4.3 2.9 6.9-.1 5.3-4.5 9.7-9.9 9.7Zm5.4-7.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.5-.7-2.5-1.3-3.5-2.9-.3-.5.3-.5.9-1.6.1-.2.1-.4 0-.5-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.1 3.1c.1.2 2 3.1 4.9 4.3.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4 0-.2-.3-.3-.6-.4Z"/>
+          </svg>
+
+        </span>
+
+        <span>WhatsApp / Contact</span>
+
+      </a>
+
+
+      <!-- FACEBOOK -->
+
+      <a
+        class="link"
+        href="https://www.facebook.com/share/19e4otBsUY/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <span class="icon">
+
+          <svg viewBox="0 0 24 24">
+            <path d="M14.2 23v-9h3l.5-3.5h-3.5V8.3c0-1 .3-1.7 1.8-1.7h1.9V3.4c-.3 0-1.4-.1-2.7-.1-2.7 0-4.5 1.7-4.5 4.7v2.6H7.7V14h3v9h3.5Z"/>
+          </svg>
+
+        </span>
+
+        <span>Facebook</span>
+
+      </a>
+
+
+      <!-- INSTAGRAM -->
+
+      <a
+        class="link"
+        href="https://www.instagram.com/renvalclothes?stkn=ZGpzenI4bG04NDJj"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <span class="icon">
+
+          <svg viewBox="0 0 24 24">
+            <path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm0 1.9a3.3 3.3 0 0 0-3.3 3.3v9.6a3.3 3.3 0 0 0 3.3 3.3h9.6a3.3 3.3 0 0 0 3.3-3.3V7.2a3.3 3.3 0 0 0-3.3-3.3H7.2Zm9.9 1.4a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.9a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Z"/>
+          </svg>
+
+        </span>
+
+        <span>Instagram</span>
+
+      </a>
+
+
+      <!-- TIKTOK -->
+
+      <a
+        class="link"
+        href="https://www.tiktok.com/@renvalclothes"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <span class="icon">
+
+          <svg viewBox="0 0 24 24">
+            <path d="M16.6 2c.3 1.8 1.3 3 3.1 3.2v3.1c-1.5-.1-2.8-.5-4-1.3v7.4c0 4.1-2.3 6.5-6 6.5-3.3 0-5.6-2.2-5.6-5.3 0-3.4 2.7-5.8 6.3-5.8.4 0 .8 0 1.1.1V13c-.3-.1-.6-.2-1-.2-1.5 0-2.6 1-2.6 2.5 0 1.4 1 2.3 2.4 2.3 1.7 0 2.5-1 2.5-3.2V2h3.8Z"/>
+          </svg>
+
+        </span>
+
+        <span>TikTok</span>
+
+      </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+      <div>
+
+        <div class="footer-brand">
+          RENVAL<br>
+          CLOTHES
+        </div>
+
+        <div class="footer-sub">
+          Premium Fashion
+        </div>
+
+      </div>
+
+
+      <div class="socials">
+
+
+        <!-- WhatsApp -->
+
+        <a
+          class="social"
+          href="https://wa.me/8801998191865"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="WhatsApp"
+        >
+
+          <svg viewBox="0 0 24 24">
+            <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7c1.6.9 3.5 1.3 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.3-6.1-3.5-8.3Z"/>
+          </svg>
+
+        </a>
+
+
+        <!-- Facebook -->
+
+        <a
+          class="social"
+          href="https://www.facebook.com/share/19e4otBsUY/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+
+          <svg viewBox="0 0 24 24">
+            <path d="M14.2 23v-9h3l.5-3.5h-3.5V8.3c0-1 .3-1.7 1.8-1.7h1.9V3.4c-.3 0-1.4-.1-2.7-.1-2.7 0-4.5 1.7-4.5 4.7v2.6H7.7V14h3v9h3.5Z"/>
+          </svg>
+
+        </a>
+
+
+        <!-- Instagram -->
+
+        <a
+          class="social"
+          href="https://www.instagram.com/renvalclothes?stkn=ZGpzenI4bG04NDJj"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+
+          <svg viewBox="0 0 24 24">
+            <path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm0 1.9a3.3 3.3 0 0 0-3.3 3.3v9.6a3.3 3.3 0 0 0 3.3 3.3h9.6a3.3 3.3 0 0 0 3.3-3.3V7.2a3.3 3.3 0 0 0-3.3-3.3H7.2Z"/>
+          </svg>
+
+        </a>
+
+
+        <!-- TikTok -->
+
+        <a
+          class="social"
+          href="https://www.tiktok.com/@renvalclothes"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="TikTok"
+        >
+
+          <svg viewBox="0 0 24 24">
+            <path d="M16.6 2c.3 1.8 1.3 3 3.1 3.2v3.1c-1.5-.1-2.8-.5-4-1.3v7.4c0 4.1-2.3 6.5-6 6.5-3.3 0-5.6-2.2-5.6-5.3 0-3.4 2.7-5.8 6.3-5.8.4 0 .8 0 1.1.1V13c-.3-.1-.6-.2-1-.2-1.5 0-2.6 1-2.6 2.5 0 1.4 1 2.3 2.4 2.3 1.7 0 2.5-1 2.5-3.2V2h3.8Z"/>
+          </svg>
+
+        </a>
+
+      </div>
+
+    </footer>
+
+  </main>
+
+</body>
+              </html>
